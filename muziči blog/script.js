@@ -13,3 +13,12 @@ function frameLooper () {
 
 }
 frameLooper();
+
+document.addEventListener('DOMContentLoaded', function () {
+	const menu = document.querySelector('.navigation ul');
+	const hamburger = document.querySelector('.hamburger-menu');
+
+	hamburger.addEventListener('click', function() {
+		menu.classList.toggle('showMenu');
+	});
+});

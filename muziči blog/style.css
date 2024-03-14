@@ -25,6 +25,10 @@ nav {
     background: #303030;
 text-transform: capitalize;
 }
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
 .navigation{
     display: flex;
     align-items: center;
@@ -75,6 +79,7 @@ header {
 main .container {
     display: flex;
 }
+
 .blogs {
     flex: 3;
     margin-right: 20px;
@@ -152,7 +157,67 @@ padding: 5px;
     color: #F72798;
   } 
   @media (max-width: 768px) {
+    .navigation {
+        flex-direction: column;
+    }
+    .navigation ul {
+        flex-direction: column;
+        align-items: center;
+    }
     .blog, .aside-links {
-        max-width: 100%; 
+        max-width: 100%;
+        margin-right: 0;
+    }
+    .blog img {
+        width: 100%; /* Slike će zauzimati celu širinu na malim ekranima */
+        margin-right: 0;
+        margin-bottom: 20px; /* Dodati malo prostora ispod slike */
+    }
+    .blog-content, .aside-content {
+        padding: 10px;
+    }
+    main .container {
+        flex-direction: column;
+    }
+    .hamburger-menu {
+      display: block;
+      color: #fff; /* Promenite boju po želji */
+  }
+  
+  .navigation ul {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      align-items: start;
+      background-color: #303030;
+      display: none;
+  }
+
+  .navigation ul li {
+      margin: 10px;
+  }
+
+  .navigation ul li a {
+      color: #fff;
+      padding: 10px;
+      display: block;
+  }
+
+  .navigation ul.showMenu {
+      display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+    .navigation .logo h5, .navigation ul li a {
+        font-size: 14px; /* Manji tekst za veoma male ekrane */
+    }
+    .blog-content h2 {
+        font-size: 18px; /* Manji naslovi za blog postove */
+    }
+    .navigation {
+        padding: 10px 20px; /* Manji padding za navigaciju */
     }
 }
