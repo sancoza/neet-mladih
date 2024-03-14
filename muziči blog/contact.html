@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Pink Music &trade; | Muzički blog </title>
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <div class="navigation">
+        <div class="logo">
+          <h5><span>pink</span> music &trade;</h5>
+        </div>
+        <div class="hamburger-menu">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul>
+          <li><a href="./index.html">naslovna</a></li>
+          <li><a href="./index.html">o nama</a></li>
+          <li><a href="./index.html">kontakt</a></li>
+        </ul>
+      </div>
+    </div>
+</nav>
+<header>
+  <div class="container">
+    <h1>muzički blog</h1>
+    <p id="text"></p>
+  </div>
+</header>
+<main class="contact">
+  <h1>Dobrodošli pošaljite nam pitanje</h1>
+  <div class="container">
+    
+  <form action="/tvoj_server_endpoint" method="post">
+   
+    <input type="text" id="imeNadimak" name="imeNadimak" placeholder="ime ili nadimak" required><br><br>
+
+    
+    <input type="email" id="email" name="email" placeholder="email" required><br><br>
+
+    <label for="zanr">Izaberi muzički žanr:</label><br>
+    <select id="zanr" name="zanr" required>
+        <option value="blues">Blues</option>
+        <option value="rock">Rock</option>
+        <option value="hiphop">Hip Hop</option>
+        <option value="jazz">Jazz</option>
+        <option value="funky">Funky</option>
+    </select><br><br>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+
+    <input type="submit" value="Pošalji">
+</form>
+  </div>
+  
+</main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
