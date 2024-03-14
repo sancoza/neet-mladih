@@ -76,7 +76,7 @@ header {
     color: #fff; -webkit-backdrop-filter: blur(8px); 
     backdrop-filter: blur(8px); 
 }
-main .container {
+main .container-blogs {
     display: flex;
 }
 
@@ -194,7 +194,7 @@ input[type="submit"]:hover {
   text-align: center;
   padding: 20px 0;
 }
-.about .container p {
+.about-me p {
   font-style: italic;
   padding: 20px 0;
 }
