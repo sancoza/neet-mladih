@@ -40,14 +40,11 @@ text-transform: capitalize;
     padding-left: 10px; 
     color: #fff;
   }
-.navigation .logo i {
-    background: #F72798;
-    color: #fff;
-    padding: 5px;
-    border-radius: 3px;
+.navigation .logo span {
+    color: #F72798;
+    background: #000000;
 }
 .navigation .logo {
-    color: #F72798;
     font-weight: 400;
 }
 .navigation ul  {
