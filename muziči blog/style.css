@@ -138,5 +138,15 @@ padding: 5px;
   }
   .category h2, .tags h2 {
     padding-bottom: 20px 0;
-    border-bottom: 1px solid #fff;
+    text-decoration: underline;
+    text-decoration-color: #fff;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
   }
+  .aside-content ul li a {
+    color: #fff;
+    line-height: 2;
+  }
+  .aside-content ul li:hover a {
+    color: #F72798;
+  } 
