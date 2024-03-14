@@ -121,8 +121,12 @@ padding: 5px;
     padding: 10px 20px;
     text-align: center;
     margin-top: 20px;
-   
+   transition: .3s ease-in-out;
     white-space: nowrap;
+  }
+  .blog-content .btn:hover {
+    background: #303030;
+    color: #ddd;
   }
   .aside-links {
     flex: 1;
@@ -150,3 +154,8 @@ padding: 5px;
   .aside-content ul li:hover a {
     color: #F72798;
   } 
+  @media (max-width: 768px) {
+    .blog, .aside-links {
+        max-width: 100%; 
+    }
+}
