@@ -31,3 +31,6 @@ nav ul li a{
 header {
     text-align: center;
 }
+.container{
+    width: 1200px;
+}
