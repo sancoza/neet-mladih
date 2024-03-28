@@ -1,5 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body {
+    font-family: "Lobster", sans-serif;
+  font-weight: 400;
+}
+header{
+    background:linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)), url(./img/IMG_0075.jpeg);
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+header h1 {
+    color: #ffd900;
+    -webkit-text-stroke:1px black;
+    font-size: 4rem;
+}
+header p {
+    text-transform: capitalize;
+    font-family: sans-serif;
+    font-weight: 700;
 }
